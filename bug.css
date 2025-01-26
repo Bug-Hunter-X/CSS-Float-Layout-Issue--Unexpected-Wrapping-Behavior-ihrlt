@@ -1,0 +1,10 @@
+The following CSS code causes an unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue is that the `float: left;` property can cause unexpected layout issues when the total width of floated elements exceeds the width of their containing element.  In this case, the `div` elements will wrap to the next line, but the total width might not be evenly distributed across the lines.
