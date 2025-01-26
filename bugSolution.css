@@ -1,0 +1,15 @@
+The issue can be solved using flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+This flexbox solution ensures that items wrap properly and distribute the available space according to their specified width.  `box-sizing: border-box` ensures that padding and border are included in the element's total width.
